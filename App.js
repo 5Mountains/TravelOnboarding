@@ -1,21 +1,7 @@
 import * as React from 'react';
-import {NavigationContainer} from '@react-navigation/native';
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
 
-import {OnBoarding} from './app/screens';
+import {Navigation} from './src/navigation';
 
-const Stack = createNativeStackNavigator();
+const App = () => <Navigation />;
 
-const App = () => (
-  <NavigationContainer>
-    <Stack.Navigator>
-      <Stack.Screen
-        name="OnBoarding"
-        component={OnBoarding}
-        options={{headerShown: false}}
-      />
-    </Stack.Navigator>
-  </NavigationContainer>
-);
-
-export default () => <App />;
+export default App;
