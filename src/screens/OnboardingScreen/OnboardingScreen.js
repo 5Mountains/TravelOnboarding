@@ -1,3 +1,4 @@
+/* eslint-disable no-shadow */
 import React, {useState, useEffect, useRef} from 'react';
 import {Animated, StatusBar} from 'react-native';
 import {SafeAreaView} from 'react-native-safe-area-context';
